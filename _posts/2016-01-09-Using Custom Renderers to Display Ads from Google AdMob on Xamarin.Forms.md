@@ -1,4 +1,4 @@
-## Background
+<!-- ## Background -->
 
 Xamarin.Forms support several UI elements for Pages (ContentPage, NavigationPage, TabbedPage, etc.), Layouts (StackLayout, GridLayout, ScrollView, etc.), and Controls (Button, Image, Label, etc.). Each of these elements are rendered into their native equivalents on each platform.
 
