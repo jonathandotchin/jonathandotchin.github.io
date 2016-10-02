@@ -198,7 +198,6 @@ namespace UsingCustomRendererAdsXamarin.WinPhone.CustomRenderers.AdMob
     public class AdMobViewRenderer : ViewRenderer<AdMobView, AdView>
     {
         /// 
-
         /// Used for registration with dependency service
         /// 
 
