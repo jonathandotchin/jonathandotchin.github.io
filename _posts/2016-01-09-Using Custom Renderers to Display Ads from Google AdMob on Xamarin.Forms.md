@@ -173,4 +173,71 @@ namespace UsingCustomRendererAdsXamarin.Droid.CustomRenderers.AdMob
 }
 ```
 
+Afterward, you need to edit the AndroidManifest.xml under Properties to allow ACCESS_NETWORK_STATE and INTERNET as well as declaring ads activity.
+
+Once this is completed, you can run the application. Note that it may takes a few start for the ads to warm up and display.
+
 ## Windows Phone
+
+In Windows Phone, you will need to include the 'Google Mobile Ads SDK' mentionned above as a reference and and create a class that inherits from Xamarin.Forms.Platform.WinPhone.ViewRenderer that maps a cross-platform element to a native element.
+
+![Windows Phone AdMobViewRenderer Creation]({{site.url}}/resources/2016-01-09-Using Custom Renderers to Display Ads from Google AdMob on Xamarin.Forms/images/Windows Phone AdMobViewRenderer Creation.png "Windows Phone AdMobViewRenderer Creation"){: .align-center}
+
+``` c#
+using GoogleAds;
+
+using UsingCustomRendererAdsXamarin.CustomRenderers.AdMob;
+using UsingCustomRendererAdsXamarin.WinPhone.CustomRenderers.AdMob;
+
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.WinPhone;
+
+[assembly: ExportRenderer(typeof(AdMobView), typeof(AdMobViewRenderer))]
+namespace UsingCustomRendererAdsXamarin.WinPhone.CustomRenderers.AdMob
+{
+    public class AdMobViewRenderer : ViewRenderer<AdMobView, AdView>
+    {
+        /// 
+
+        /// Used for registration with dependency service
+        /// 
+
+        public static void Init()
+        {
+        }
+
+        protected override void OnElementChanged(ElementChangedEventArgs<AdMobView> elementChangedEventArgs)
+        {
+            base.OnElementChanged(elementChangedEventArgs);
+
+            var adMobElement = this.Element;
+
+            if ((adMobElement != null) && (elementChangedEventArgs.OldElement == null))
+            {
+                var bannerAd = new AdView
+                {
+                    Format = AdFormats.Banner,
+                    AdUnitID = adMobElement.AdUnitId,
+                };
+
+                var adRequest = new AdRequest();
+                #if DEBUG
+                // use test ads in debug mode
+                adRequest.ForceTesting = true;
+                #endif
+                bannerAd.LoadAd(adRequest);
+                this.Children.Add(bannerAd);
+            }
+        }
+    }
+}
+```
+
+Afterward, update the manifest 'WMAppManifest.xml' to include the following capabilities.
+
+- ID_CAP_NETWORKING
+- ID_CAP_WEBBROWSERCOMPONENT
+- ID_CAP_MEDIALIB_PLAYBACK
+- ID_CAP_MEDIALIB_AUDIO
+
+Once this is completed, you can run the application. Note that it may takes a few start for the ads to warm up and display.
