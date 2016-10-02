@@ -79,25 +79,25 @@ analytics:
 author:
   name             : "Jonathan Chin"
   avatar           : "bio-photo.jpg"
-  bio              : ""
-  location         : ""
+  bio              : "Technical lead at Ubisoft"
+  location         : "Canada"
   email            : "jonathandotchin@gmail.com"
-  uri              :
+  uri              : "https://jonathandotchin.github.io/"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "https://github.com/jonathandotchin"
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/jonathanchin"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
+  stackoverflow    : "6911715/jonathan-chin" # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
   twitter          :
