@@ -1,4 +1,7 @@
-<!-- ## Background -->
+How to use Custom Renders to display ads from Google AdMob on Xamarin.Forms. This tutorial outlines the necessary steps for Android and Windows Phone but can easily be extended for iOS devices and for other ads libraries.
+
+
+## Background
 
 Xamarin.Forms support several UI elements for Pages (ContentPage, NavigationPage, TabbedPage, etc.), Layouts (StackLayout, GridLayout, ScrollView, etc.), and Controls (Button, Image, Label, etc.). Each of these elements are rendered into their native equivalents on each platform.
 
