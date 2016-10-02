@@ -54,3 +54,123 @@ namespace UsingCustomRendererAdsXamarin.CustomRenderers.AdMob
     }
 }
 ```
+
+In order to the display the ads, we will make a simple modification to the default App.cs file generated for us.
+
+``` c#
+using UsingCustomRendererAdsXamarin.CustomRenderers.AdMob;
+
+using Xamarin.Forms;
+
+namespace UsingCustomRendererAdsXamarin
+{
+    public class App : Application
+    {
+        public App()
+        {
+            // create the ads
+            var ads = new AdMobView();
+            if (Device.OS == TargetPlatform.WinPhone)
+            {
+                ads.AdUnitId = "WINDOWS_PHONE_AD_UNIT_ID";
+            }
+
+            if (Device.OS == TargetPlatform.Android)
+            {
+                ads.AdUnitId = "ANDROID_AD_UNIT_ID";
+            }
+
+            // include the ads
+            this.MainPage = new ContentPage
+            {
+                Content = new StackLayout
+                {
+                    VerticalOptions = LayoutOptions.Center,
+                    Children = {
+                        new Label
+                            {
+                                Text = "Hello Ads"
+                            },
+                        ads
+                    }
+                }
+            };
+        }
+
+        protected override void OnStart()
+        {
+            // Handle when your app starts
+        }
+
+        protected override void OnSleep()
+        {
+            // Handle when your app sleeps
+        }
+
+        protected override void OnResume()
+        {
+            // Handle when your app resumes
+        }
+    }
+}
+```
+
+## Android
+
+In the Android project, you will need to add the Google Play Services - Ads Xamarin component and create a class that inherits from Xamarin.Forms.Platform.Android.ViewRenderer that maps a cross-platform element to a native element.
+
+![Android AdMobViewRenderer Creation]({{site.url}}/resources/2016-01-09-Using Custom Renderers to Display Ads from Google AdMob on Xamarin.Forms/images/Android AdMobViewRenderer Creation.png "Android AdMobViewRenderer Creation"){: .align-center}
+
+``` c#
+using Android.Gms.Ads;
+
+using UsingCustomRendererAdsXamarin.CustomRenderers.AdMob;
+using UsingCustomRendererAdsXamarin.Droid.CustomRenderers.AdMob;
+
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.Android;
+
+// registers the ViewRenderer
+[assembly: ExportRenderer(typeof(AdMobView), typeof(AdMobViewRenderer))]
+namespace UsingCustomRendererAdsXamarin.Droid.CustomRenderers.AdMob
+{
+    // creates the renderer that 'maps' the cross-platform element to the native element
+    public class AdMobViewRenderer : ViewRenderer<AdMobView, AdView>
+    {
+        public static void Init()
+        {
+
+        }
+
+        // renders the native element
+        protected override void OnElementChanged(ElementChangedEventArgs<AdMobView> e)
+        {
+            base.OnElementChanged(e);
+
+            var adMobElement = this.Element;
+
+            if (adMobElement != null && e.OldElement == null)
+            {
+                // declare the native element
+                // assign the necessary properties like the Ad Unit Id
+                AdView ad = new AdView(this.Context);
+                ad.AdSize = AdSize.Banner;
+                ad.AdUnitId = adMobElement.AdUnitId;
+                var builder = new AdRequest.Builder();
+                
+                #if DEBUG
+                // Google requires the usage of test ads while debugging
+                builder.AddTestDevice(AdRequest.DeviceIdEmulator);
+                #endif
+                
+                var adRequest = builder.Build();
+
+                ad.LoadAd(adRequest);
+                this.SetNativeControl(ad);
+            }
+        }
+    }
+}
+```
+
+## Windows Phone
