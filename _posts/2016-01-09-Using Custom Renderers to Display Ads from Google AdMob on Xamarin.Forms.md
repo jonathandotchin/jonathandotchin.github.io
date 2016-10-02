@@ -1,4 +1,4 @@
-How to use Custom Renders to display ads from Google AdMob on Xamarin.Forms.
+How to use Custom Renders to display ads from Google AdMob on Xamarin.Forms. This tutorial outlines the necessary steps for Android and Windows Phone but can easily be extended for iOS devices and for other ads libraries.
 
 
 ## Background
