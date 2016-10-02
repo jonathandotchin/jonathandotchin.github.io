@@ -1,1 +1,0 @@
-Using Custom Renderers to Display Ads from Google AdMob on Xamarin.Forms
