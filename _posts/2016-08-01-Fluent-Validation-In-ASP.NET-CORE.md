@@ -115,7 +115,8 @@ public IActionResult Create([FromBody] TodoItem item)
 
 ...
 
-``` Hook up the Services and Dependencies
+``` 
+### Hook up the Services and Dependencies
 
 In the `Startup.cs`, you will need to load the `FluentValidation` service. In `ConfigureServices`, change
 
@@ -138,6 +139,12 @@ services.AddSingleton<IValidator<TodoItem>, TodoItemValidator>();
 ### Test with Postman
 
 If you test with Postman as follow, you should see that the return is `400 Bad Request` since the `name` is missing.
+
+![Windows Phone AdMobViewRenderer Creation]({{site.url}}/resources/2016-08-01-Fluent-Validation-In-ASP.NET-CORE/images/Postman-Bad-Request.png "Windows Phone AdMobViewRenderer Creation"){: .align-center}
+
+However, the following should give `201 Created`.
+
+![Windows Phone AdMobViewRenderer Creation]({{site.url}}/resources/2016-08-01-Fluent-Validation-In-ASP.NET-CORE/images/Postman-Created.png "Windows Phone AdMobViewRenderer Creation"){: .align-center}
 
 # Further Information
 
