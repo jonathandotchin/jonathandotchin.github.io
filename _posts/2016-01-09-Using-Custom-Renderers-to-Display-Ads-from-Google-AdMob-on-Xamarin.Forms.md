@@ -19,17 +19,17 @@ The following assumes that you are already familiar with Google AdMob. If you ar
 
 You will need to create a Xamarin.Forms project. The samples will be featuring the Portable version but you can easily adapt the code for the Shared version.
 
-![Project Creation Template]({{site.url}}/resources/2016-01-09-Using Custom Renderers to Display Ads from Google AdMob on Xamarin.Forms/images/Project Creation Template.png "Project Creation Template"){: .align-center}
+![Project Creation Template]({{site.url}}/resources/2016-01-09-Using-Custom-Renderers-to-Display-Ads-from-Google-AdMob-on-Xamarin.Forms/images/Project Creation Template.png "Project Creation Template"){: .align-center}
 
 Your solution should be similar to
 
-![Project Creation Result]({{site.url}}/resources/2016-01-09-Using Custom Renderers to Display Ads from Google AdMob on Xamarin.Forms/images/Project Creation Result.png "Project Creation Result"){: .align-center}
+![Project Creation Result]({{site.url}}/resources/2016-01-09-Using-Custom-Renderers-to-Display-Ads-from-Google-AdMob-on-Xamarin.Forms/images/Project Creation Result.png "Project Creation Result"){: .align-center}
 
 ## Portable
 
 In the Portable project, you will need to create a class that inherits from Xamarin.Forms.View.
 
-![AdMobView Creation]({{site.url}}/resources/2016-01-09-Using Custom Renderers to Display Ads from Google AdMob on Xamarin.Forms/images/AdMobView Creation.png "AdMobView Creation"){: .align-center}
+![AdMobView Creation]({{site.url}}/resources/2016-01-09-Using-Custom-Renderers-to-Display-Ads-from-Google-AdMob-on-Xamarin.Forms/images/AdMobView Creation.png "AdMobView Creation"){: .align-center}
 
 ``` c#
 using Xamarin.Forms;
@@ -122,7 +122,7 @@ namespace UsingCustomRendererAdsXamarin
 
 In the Android project, you will need to add the Google Play Services - Ads Xamarin component and create a class that inherits from Xamarin.Forms.Platform.Android.ViewRenderer that maps a cross-platform element to a native element.
 
-![Android AdMobViewRenderer Creation]({{site.url}}/resources/2016-01-09-Using Custom Renderers to Display Ads from Google AdMob on Xamarin.Forms/images/Android AdMobViewRenderer Creation.png "Android AdMobViewRenderer Creation"){: .align-center}
+![Android AdMobViewRenderer Creation]({{site.url}}/resources/2016-01-09-Using-Custom-Renderers-to-Display-Ads-from-Google-AdMob-on-Xamarin.Forms/images/Android AdMobViewRenderer Creation.png "Android AdMobViewRenderer Creation"){: .align-center}
 
 ``` c#
 using Android.Gms.Ads;
@@ -184,7 +184,7 @@ Once this is completed, you can run the application. Note that it may takes a fe
 
 In Windows Phone, you will need to include the 'Google Mobile Ads SDK' mentionned above as a reference and and create a class that inherits from Xamarin.Forms.Platform.WinPhone.ViewRenderer that maps a cross-platform element to a native element.
 
-![Windows Phone AdMobViewRenderer Creation]({{site.url}}/resources/2016-01-09-Using Custom Renderers to Display Ads from Google AdMob on Xamarin.Forms/images/Windows Phone AdMobViewRenderer Creation.png "Windows Phone AdMobViewRenderer Creation"){: .align-center}
+![Windows Phone AdMobViewRenderer Creation]({{site.url}}/resources/2016-01-09-Using-Custom-Renderers-to-Display-Ads-from-Google-AdMob-on-Xamarin.Forms/images/Windows Phone AdMobViewRenderer Creation.png "Windows Phone AdMobViewRenderer Creation"){: .align-center}
 
 ``` c#
 using GoogleAds;
