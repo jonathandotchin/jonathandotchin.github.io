@@ -82,14 +82,14 @@ author:
   bio              : "Technical lead at Ubisoft"
   location         : "Canada"
   email            : "jonathandotchin@gmail.com"
-  uri              : "https://jonathandotchin.github.io/"
+  uri              : #"https://jonathandotchin.github.io/"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           : "jonathandotchin"
+  github           : #"jonathandotchin"
   google_plus      :
   keybase          :
   instagram        :
@@ -97,7 +97,7 @@ author:
   linkedin         : "jonathanchin"
   pinterest        :
   soundcloud       :
-  stackoverflow    : "6911715/jonathan-chin" # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
+  stackoverflow    : #"6911715/jonathan-chin" # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
   steam            :
   tumblr           :
   twitter          :
