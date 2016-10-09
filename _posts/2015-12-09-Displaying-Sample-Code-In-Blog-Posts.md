@@ -32,12 +32,58 @@ This is actually straightforward. Simply take a snippet of your code as an image
 
 ## Gist
 
-In essence, this uses [GitHub Gist](https://gist.github.com/) to embed the sample code in your post.
+In essence, this uses [GitHub Gist](https://gist.github.com/) to embed the sample code in your post. Once a Gist is created, you simply need to copy and paste the generated `script` tag into your post.
+
+``` javascript
+<script src="https://gist.github.com/jonathandotchin/9106953ba91c7c39fa11375a6a293f01.js"></script>
+```
+
+becomes
 
 <script src="https://gist.github.com/jonathandotchin/9106953ba91c7c39fa11375a6a293f01.js"></script>
 
-###
+### Pros
+
+- Enables syntax highlighting
+- Enables copy and paste
+
+### Cons
+
+- Code located elsewhere
 
 ## Syntax Highlighter
 
-# Conclusion
+In essence, syntax highlighter examines a piece of code and hightlights it in consequence. This can be done on the client side with a library such as [highlight.js](https://highlightjs.org/) and [SyntaxHighlighter](http://alexgorbatchev.com/SyntaxHighlighter/) or on the server side with a library like [rouge](http://rouge.jneen.net/). In my case, since I am using the Jekyll blogging platform, it integrated the ability to [highlight code snippets](http://jekyllrb.com/docs/posts/) using either Pygments or Rouge.
+
+``` c#
+
+/// <summary>
+/// Roots the frame navigation failed.
+/// </summary>
+/// <param name="sender">The sender.</param>
+/// <param name="e">The <see cref="NavigationFailedEventArgs"/> instance containing the event data.</param>
+private void RootFrameNavigationFailed(object sender, NavigationFailedEventArgs e)
+{
+    // Code to execute if a navigation fails
+    if (Debugger.IsAttached)
+    {
+        // A navigation has failed; break into the debugger
+        Debugger.Break();
+    }
+}
+
+```
+
+### Pros
+
+- Enables syntax highlighting
+- Enables copy and paste
+- Keeps the code with the post
+
+### Cons
+
+- None for now
+
+# Further Reading
+
+The blogging platform that I am using integrates Pygments or Rouge for syntax highlighting. If this is not your case, Alex Gorbatchev's [SyntaxHighlighter](http://alexgorbatchev.com/SyntaxHighlighter/manual/installation.html) would suit your needs.
