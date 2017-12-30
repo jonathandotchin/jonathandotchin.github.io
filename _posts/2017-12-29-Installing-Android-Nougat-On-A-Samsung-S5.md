@@ -84,7 +84,7 @@ Head over to (Open GApps)[http://opengapps.org/] and download the zip that would
 6. Connect the device to the PC
 7. Wait for the log in Odin to say "Added!!" and for a device to appear in the interface. If nothing happens, try  these steps again.
 
-![Device Added]({{site.url}}/resources/2017-12-29-Installing-Android-Nougat-On-A-Samsung-S5/Images/Odin-Added.png "Device Added"){: .align-center}
+![Device Added]({{site.url}}/resources/2017-12-29-Installing-Android-Nougat-On-A-Samsung-S5/Images/Odin-Added-Device.png "Device Added"){: .align-center}
 
 ## Install TWRP Recovery
 
@@ -96,7 +96,7 @@ _Step 3 is time critical, make sure to understand all steps before moving forwar
 4. TWRP should boot up and acknowledge a warning about modifying system partition.
 5. Go to the Mount section and make sure files of the device are visible on the PC.
 
-![TWRP Home]({{site.url}}/resources/2017-12-29-Installing-Android-Nougat-On-A-Samsung-S5/Images/TWRP.png "TWRP Home"){: .align-center}
+![TWRP Home]({{site.url}}/resources/2017-12-29-Installing-Android-Nougat-On-A-Samsung-S5/Images/TWRP-Home.png "TWRP Home"){: .align-center}
 
 ## Install Lineage OS and Google Apps
 
