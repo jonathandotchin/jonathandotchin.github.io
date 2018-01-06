@@ -1,3 +1,8 @@
+---
+tags:
+  - best practices
+---
+
 This post details the versioning strategy we are using for our products. We are talking about products and not libraries, web services or APIs.
 
 # Background

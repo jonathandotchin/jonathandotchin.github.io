@@ -1,3 +1,8 @@
+---
+tags:
+  - asp.net
+---
+
 This tutorial demontrates how to setup Fluent Validation in ASP.NET Core.
 
 # Background

@@ -1,3 +1,8 @@
+---
+tags:
+  - android
+---
+
 In this post, we will install Android 7.0 Nougat on a Samsung Galaxy S5 using a Windows machine.
 
 # Background

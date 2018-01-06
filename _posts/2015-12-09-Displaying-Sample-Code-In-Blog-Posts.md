@@ -1,3 +1,8 @@
+---
+tags:
+  - documentation
+---
+
 This post examines the different strategies at including sample code in a blog post.
 
 # Background

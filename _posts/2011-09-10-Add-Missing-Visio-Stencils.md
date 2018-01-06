@@ -1,3 +1,8 @@
+---
+tags:
+  - documentation
+---
+
 In this post, we will add stencils for software and database diagrams to Visio 2010 Standard.
 
 # Background

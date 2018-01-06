@@ -1,3 +1,8 @@
+---
+tags:
+  - best practices
+---
+
 In this post, we will examine the infamous 80 characters limit on a single line of code.
 
 # Background

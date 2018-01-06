@@ -1,3 +1,8 @@
+---
+tags:
+  - interview
+---
+
 In this post, we will examine a simple job candidates ranking system that was put in place in our team in order to quickly decide if we want to move forward with certains applicants.
 
 # Background

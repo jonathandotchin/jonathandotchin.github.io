@@ -1,3 +1,8 @@
+---
+tags:
+  - contests
+---
+
 This is a re-post of an article that I wrote for the App Innovation Contest run by Code Project.
 
 # On The Spot 

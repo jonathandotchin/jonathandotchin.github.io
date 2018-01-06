@@ -1,3 +1,8 @@
+---
+tags:
+  - xamarin
+---
+
 In this post, we will look at an issue regarding Xamarin WebView and its ability to bind directly to HTML source.
 
 # Background
