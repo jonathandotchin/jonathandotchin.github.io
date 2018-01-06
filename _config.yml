@@ -5,7 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en"
@@ -17,42 +17,16 @@ url                      : "https://jonathandotchin.github.io" # the base hostna
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "jonathandotchin/jonathandotchin.github.io " # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : teaser-500x300.jpg # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
-# breadcrumbs            : false # true, false (default) - Fragile...See docs (https://mmistakes.github.io/minimal-mistakes/docs/configuration/)
+breadcrumbs            : false # true, false (default) - Fragile...See docs (https://mmistakes.github.io/minimal-mistakes/docs/configuration/)
 words_per_minute         : 200
 comments:
-  provider               : "staticman" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
-  disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+  provider               : "staticman_v2" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
 staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
   branch                 : "master" # "master", "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
-  transforms:
-    email                : # "md5"
-  generatedFields:
-    date:
-      type               : # "date"
-      options:
-        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-reCaptcha:
-  siteKey                :
-  secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search                   : true #, false (default)
+search_full_content      : true #, false (default)
 
 # SEO Related
 google_site_verification : "dncEJwp0Rch9FFXMGuM5NtgGn5hGQcEvWPFVbvfFGcA"
