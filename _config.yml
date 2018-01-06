@@ -86,7 +86,7 @@ analytics:
 # Site Author
 author:
   name             : "Jonathan Chin"
-  avatar           : "bio-photo.jpg"
+  avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Technical lead at Ubisoft"
   location         : "Canada"
   email            : "jonathandotchin@gmail.com"
