@@ -32,3 +32,5 @@ As the quantity of fields to keep track increase, so does the size of the view s
 
 Reducing the number of server controls and relying on simple HTML controls when possible will go a long way in reducing the size of the view state and making your site more responsive.
 
+[50 Ways to Avoid Find and Fix ASP.NET Performance Issues](https://www.red-gate.com/library/50-ways-to-avoid-find-and-fix-asp-net-performance-issues)
+
