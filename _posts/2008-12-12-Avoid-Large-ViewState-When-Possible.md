@@ -2,6 +2,7 @@
 tags:
   - best practices
   - asp.net
+  - tips
 ---
 
 In this post, we will look at why we should avoid large view state when possible.

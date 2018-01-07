@@ -1,7 +1,7 @@
 ---
 tags:
   - best practices
-  - snippet
+  - tips
   - asp.net
 ---
 
