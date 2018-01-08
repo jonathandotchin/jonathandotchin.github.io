@@ -3,6 +3,7 @@ tags:
   - best practices
   - tips
   - asp.net
+  - performance
 ---
 
 You get exactly one clustered index on a table. Ensure you have it in the right place. First choice is the most frequently accessed column, which may or may not be the primary key. Second choice is a column that structures the storage in a way that helps performance. This is a must for partitioning data.

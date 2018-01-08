@@ -3,6 +3,7 @@ tags:
   - best practices
   - tips
   - asp.net
+  - performance
 ---
 
 Caching is not synonymous with performance. Your code should already be efficient. Caching should only be used as a last resort, after you’ve made all possible (and sensible) code optimizations.

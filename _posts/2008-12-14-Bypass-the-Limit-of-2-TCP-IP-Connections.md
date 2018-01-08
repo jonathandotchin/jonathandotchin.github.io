@@ -3,6 +3,7 @@ tags:
   - best practices
   - tips
   - asp.net
+  - performance
 ---
 
 Make sure you are not limited by 2 tcp ip connections when you don't need to

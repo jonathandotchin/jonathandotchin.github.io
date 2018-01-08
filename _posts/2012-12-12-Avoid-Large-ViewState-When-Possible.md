@@ -3,6 +3,7 @@ tags:
   - best practices
   - asp.net
   - tips
+  - performance
 ---
 
 In this post, we will look at why we should avoid large view state when possible.
