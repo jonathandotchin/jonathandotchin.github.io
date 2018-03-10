@@ -22,6 +22,23 @@ The Same-Origin Policy, being enforced by the browser, can be overcome by using 
 
 This does have limitations such as authentication.
 
+### YQL
+
+If you cannot build a proxy server yourself, you can leverage [YQL](https://developer.yahoo.com/yql/) to this effect. In essence, the YQL query would be as follow:
+
+```YQL
+select * from json where url = yoururl
+```
+which becomes https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20json%20where%20url%20%3D%20%22yoururl%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys.
+
+Or for XML
+```YQL
+select * from xml where url = yoururl
+```
+which becomes https://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20xml%20where%20url%20%3D%20%22yoururl%22&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys.
+
+Thereafter, you simply parse the output in consequence.
+
 ## JSONP
 
 Another solution would rely on the fact that ```<script>``` tags can have sources of different origins; thus, when a browser parses a ```<script>``` tag, it will GET the content and execute it regardless of its origin. JSONP takes advantages of this situation. One of the easiest way to leverage this would be with ```JQuery```.
