@@ -1,8 +1,15 @@
+---
+tags:
+  - pwa
+  - mobile
+  - app
+---
+
 This post examine a potential issue when porting a native app to PWA.
 
 # Background
 
-One of the first thing we want to do when porting a native app to PWA is to obtain our data for our app. Typically, the way of doing this is via a AJAX call to the remote resource. However, when performing this call, we stumble an error similiar to "No ‘Access-Control-Allow-Origin’ header is present on the requested resource.". We basically encountered the "Same-Origin Policy".
+One of the first thing we want to do when porting a native app to PWA is to obtain our data for our app. Typically, the way of doing this is via a AJAX call to the remote resource. However, when performing this call, we stumble an error similar to "No ‘Access-Control-Allow-Origin’ header is present on the requested resource.". We basically encountered the "Same-Origin Policy".
 
 # Same-Origin Policy
 
