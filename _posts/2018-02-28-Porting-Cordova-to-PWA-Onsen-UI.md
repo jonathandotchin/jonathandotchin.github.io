@@ -15,11 +15,11 @@ I wanted to experiment with PWA for a while and one of my app was built using Co
 
 App based on Onsen UI, whether it is based on Vanilla JS or Vue, seems to be performing much slower than apps built with Polymer. In my informal test runs with lighthouse, sample Onsen UI app would score in the 50s whereas sample apps built with Polymer would score in the 90s. These tests are by no means scientific since it is very well possible that the Polymer sample has been optimized specifically for lighthouse.
 
-![Onsen Vanilla JS Lighthouse Report]({{site.url}}/resources/2018-02-28-Porting-Cordova-to-PWA-Onsen-UI/Documents/onsen-vanilla-js-lighthouse-report.pdf "Onsen Vanilla JS Lighthouse Report"){: .align-center}
+[Onsen Vanilla JS Lighthouse Report]({{site.url}}/resources/2018-02-28-Porting-Cordova-to-PWA-Onsen-UI/Documents/onsen-vanilla-js-lighthouse-report.pdf "Onsen Vanilla JS Lighthouse Report"){: .align-center}
 
-![Onsen Vue Lighthouse Report]({{site.url}}/resources/2018-02-28-Porting-Cordova-to-PWA-Onsen-UI/Documents/onsen-vue-lighthouse-report.pdf "Onsen Vue Lighthouse Report"){: .align-center}
+[Onsen Vue Lighthouse Report]({{site.url}}/resources/2018-02-28-Porting-Cordova-to-PWA-Onsen-UI/Documents/onsen-vue-lighthouse-report.pdf "Onsen Vue Lighthouse Report"){: .align-center}
 
-![News Polymer Lighthouse Report]({{site.url}}/resources/2018-02-28-Porting-Cordova-to-PWA-Onsen-UI/Documents/news-polymer-project-lighthouse-report.pdf "News Polymer Lighthouse Report"){: .align-center}
+[News Polymer Lighthouse Report]({{site.url}}/resources/2018-02-28-Porting-Cordova-to-PWA-Onsen-UI/Documents/news-polymer-project-lighthouse-report.pdf "News Polymer Lighthouse Report"){: .align-center}
 
 # Minor Bugs
 
