@@ -77,7 +77,7 @@ In Visual Studio 2017, create a .NET Core Console app. Run the app and you shoul
 
 Adding docker support in Visual Studio is extremely easily with Visual Studio Tools for Docker.
 
-- Right click the project, select ```Add`` and ```Docker Support```
+- Right click the project, select ```Add``` and ```Docker Support```
 - On the ```Docker Support Options``` prompt, select the proper target OS whether you are running ```Windows``` or ```Linux``` containers.
 
 This would add a solution folder called ```docker-compose``` and several docker related files.
