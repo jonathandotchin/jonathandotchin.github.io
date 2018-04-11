@@ -1,4 +1,9 @@
-# Background
+---
+tags:
+ - docker
+ - .net
+ - tutorial
+---
 
 In this post, we will look at building .NET Core Docker App. We will first examine how to do this without Visual Studio and then with Visual Studio Tools for Docker.
 
