@@ -9,6 +9,8 @@ In this post, we will look at building .NET Core Docker App. We will first exami
 
 # Without Visual Studio 2017
 
+.NET Core app can be coded entirely without IDE. In this section, we will examine how to dockerize a .NET Core app.
+
 ## Sample .NET Core 2 App
 
 Open a command prompt and run the following command to create and test a sample .NET Core 2 app.
@@ -65,6 +67,21 @@ docker run --rm dotnetapp-dev HelloWorld from Docker
 
 # Using Visual Studio 2017
 
-## Create Sample ASP.NET Core App
+Visual Studio 2017 provides support for Docker via Visual Studio Tools for Docker.
+
+## Create Sample .NET Core App
+
+In Visual Studio 2017, create a .NET Core Console app. Run the app and you should see an output with ```Hello World!```.
 
 ## Add Docker Support
+
+Adding docker support in Visual Studio is extremely easily with Visual Studio Tools for Docker.
+
+- Right click the project, select ```Add`` and ```Docker Support```
+- On the ```Docker Support Options``` prompt, select the proper target OS whether you are running ```Windows``` or ```Linux``` containers.
+
+This would add a solution folder called ```docker-compose``` and several docker related files.
+
+## Build and Run the Docker App
+
+With the ```docker-compose``` as StartUp project, simply run the application and you should see an output with ```Hello World!```.
