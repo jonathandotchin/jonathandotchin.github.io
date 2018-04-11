@@ -38,11 +38,11 @@ We will see that the application is now listening on ```http://localhost:5000```
 
 ## Dockerize ASP.NET Core App
 
-To dockerize the .NET Core 2 app, we will create a `Dockerfile`, with no extension, and save it in the `HelloWorld` directory with the following content. Dockerfile contains Docker build instructions that runs in sequence.
+To dockerize the ASP.NET Core app, we will create a `Dockerfile`, with no extension, and save it in the `HelloWorld` directory with the following content. Dockerfile contains Docker build instructions that runs in sequence.
 
 ``` docker
 # FROM instruction, which must be first, initializes a new build stage and sets the Base Image for the remaining instructions.
-FROM microsoft/dotnet:2.0-sdk
+FROM microsoft/aspnetcore-build:2.0 AS build-env
 
 # WORKDIR sets the working directory of any remaining RUN, CMD, ENTRYPOINT, COPY and ADD instruction.
 WORKDIR /app
@@ -59,8 +59,18 @@ COPY . ./
 # RUN executes the command to publish the app into the out directory.
 RUN dotnet publish -c Release -o out
 
+# We are using Docker multi-stage build feature, which is why we have another FROM
+# FROM instruction for a runtime image
+FROM microsoft/aspnetcore:2.0
+
+# WORKDIR sets the working directory of any remaining RUN, CMD, ENTRYPOINT, COPY and ADD instruction.
+WORKDIR /app
+
+# COPY copies from the build-env image the content of the /app/out folder to the current image
+COPY --from=build-env /app/out .
+
 # ENTRYPOINT instruction allows the container to run as an executable.
-ENTRYPOINT ["dotnet", "out/HelloWorld.dll"]
+ENTRYPOINT ["dotnet", "HelloWorld.dll"]
 ```
 
 ## Build and Run the Docker App
@@ -68,8 +78,8 @@ ENTRYPOINT ["dotnet", "out/HelloWorld.dll"]
 With the dockerfile ready, we can execute the following commands to build and run the container.
 
 ``` dos
-docker build -t dotnetapp-dev .
-docker run --rm dotnetapp-dev HelloWorld from Docker
+docker build -t aspnetapp .
+docker run -it --rm -p 8000:80 aspnetapp
 ```
 
 # Using Visual Studio 2017
