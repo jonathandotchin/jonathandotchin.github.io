@@ -79,8 +79,10 @@ With the dockerfile ready, we can execute the following commands to build and ru
 
 ``` dos
 docker build -t aspnetapp .
-docker run -it --rm -p 8000:80 aspnetapp
+docker run -it --rm -p 5000:80 aspnetapp
 ```
+
+Port 5000 is mapped to port 80 so you will get the same output if you access the url ```http://localhost:5000/api/values```.
 
 # Using Visual Studio 2017
 
@@ -88,7 +90,7 @@ Visual Studio 2017 provides support for Docker via Visual Studio Tools for Docke
 
 ## Create Sample .NET Core App
 
-In Visual Studio 2017, create a .NET Core Console app. Run the app and you should see an output with ```Hello World!```.
+In Visual Studio 2017, create a ASP.NET Core app. Run the app and you should see an output if you access the url ```http://localhost:5000/api/values```.
 
 ## Add Docker Support
 
@@ -101,4 +103,17 @@ This would add a solution folder called ```docker-compose``` and several docker 
 
 ## Build and Run the Docker App
 
-With the ```docker-compose``` as StartUp project, simply run the application and you should see an output with ```Hello World!```.
+With the ```docker-compose``` as StartUp project, simply run the application and you should see an output if you access the url ```http://localhost:5000/api/values```. The port may be different, be sure to check the properties in the project.
+
+# Possible Errors
+
+## Did you mean to run dotnet SDK commands?
+
+If you are getting the following message
+
+```
+Did you mean to run dotnet SDK commands? Please install dotnet SDK from:
+http://go.microsoft.com/fwlink/?LinkID=798306&clcid=0x409
+```
+
+You need to double check that the .dll targeted by the run by ```ENTRYPOINT``` is right. Check the spelling, casing, and the path.
