@@ -17,12 +17,12 @@ One way to achieve correct microservices boundaries is to perform a domain-drive
 4. Define the microservices
 
 ## Defining Functional Requirements
-In order to define the functional requirements, we want to map all the business functions and how they are connected to each other. Technologies and implementation details are not important at this stage but you should identify dependencies towards external systems. A map might look like the following sketch taken and adapted from https://martinfowler.com/bliki/BoundedContext.html where we have a very basic analysis of selling products and providing support for sold products.
+In order to define the functional requirements, we want to map all the business functions and how they are connected to each other. Technologies and implementation details are not important at this stage but you should identify dependencies towards external systems. A map might look like the following sketch taken and adapted from [Bounded Context](https://martinfowler.com/bliki/BoundedContext.html) where we have a very basic analysis of selling products and providing support for sold products.
 
 ![Sketch]({{site.url}}/resources/2018-05-11-Defining-Microservices-Boundaries/Images/sketch-1.png "Sketch"){: .align-center}
  
 ## Defining Bounded Contexts
-The next step is to define the bounded contexts. A bounded context is simply the boundary where the domain model makes sense. For example, if within the same application, the functionality of “product” differs then you most likely have multiple contexts. If we look at the sketch below from https://martinfowler.com/bliki/BoundedContext.html, both “customer” and “product” can have different properties since they aim to resolve different functional requirements (sale and support). A product during sale might include information on inventory whereas for support the information would be irrelevant. In the case of product replacement, it would be considered a sale at no cost. 
+The next step is to define the bounded contexts. A bounded context is simply the boundary where the domain model makes sense. For example, if within the same application, the functionality of “product” differs then you most likely have multiple contexts. If we look at the sketch below from [Bounded Context](https://martinfowler.com/bliki/BoundedContext.html), both “customer” and “product” can have different properties since they aim to resolve different functional requirements (sale and support). A product during sale might include information on inventory whereas for support the information would be irrelevant. In the case of product replacement, it would be considered a sale at no cost. 
 
 ![Sketch]({{site.url}}/resources/2018-05-11-Defining-Microservices-Boundaries/Images/sketch-2.png "Sketch"){: .align-center}
  
