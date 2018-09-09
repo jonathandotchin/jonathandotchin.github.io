@@ -43,3 +43,9 @@ Having a well-designed domain model will make this step much easier. As a genera
 - There will be no data inconsistency between microservices. If it is the case, they should be part of the same service
 
 Data consistency is something we will look into greater details in a future post.
+
+# References
+
+https://docs.microsoft.com/en-us/azure/architecture/microservices/domain-analysis
+
+https://docs.microsoft.com/en-us/azure/architecture/microservices/microservice-boundaries

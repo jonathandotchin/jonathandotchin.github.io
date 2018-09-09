@@ -53,3 +53,7 @@ As anyone can imagine, there are several challenges to overcome before one can r
     - Since each microservices can be deployed individually and there are a greater number of them, procedural manual deployment will no longer be viable. The key is automation and this is where continuous integration and delivery comes into play.
 
 We will look at each of these challenges individually and how we can overcome them.
+
+# References
+
+https://docs.microsoft.com/en-us/azure/architecture/microservices/
