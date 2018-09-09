@@ -7,7 +7,7 @@ tags:
 
 An underlying principle of microservices is that each service is responsible for its own data. What this means is that if Service A owns Data Store A, Service B cannot access Data Store A directly. It must access it through Service A.
 
-![Storage]({{site.url}}/resources/2018-05-12-Data-Considerations-in-Microservices/Images/storage.png "Storage"){: .align-center}
+![Storage]({{site.url}}/resources/2018-05-12-Data-Considerations-in-Microservices/Images/data-storage.png "Storage"){: .align-center}
 
 Isolating the data store this way avoids unintentional coupling between services, preserve the ability of independent deployment and enables each service to choose the best data store and implementation for the problems it is trying to solve. Despite these benefits, there are also challenges
 
