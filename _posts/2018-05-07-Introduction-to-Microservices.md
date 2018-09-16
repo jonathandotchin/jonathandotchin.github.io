@@ -56,4 +56,4 @@ We will look at each of these challenges individually and how we can overcome th
 
 # References
 
-https://docs.microsoft.com/en-us/azure/architecture/microservices/
+[Introduction to Microservices](https://docs.microsoft.com/en-us/azure/architecture/microservices/)

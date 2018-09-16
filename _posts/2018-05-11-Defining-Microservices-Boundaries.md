@@ -46,6 +46,6 @@ Data consistency is something we will look into greater details in a future post
 
 # References
 
-https://docs.microsoft.com/en-us/azure/architecture/microservices/domain-analysis
+[Domain Analysis](https://docs.microsoft.com/en-us/azure/architecture/microservices/domain-analysis)
 
-https://docs.microsoft.com/en-us/azure/architecture/microservices/microservice-boundaries
+[Microservice Boudnaries](https://docs.microsoft.com/en-us/azure/architecture/microservices/microservice-boundaries)

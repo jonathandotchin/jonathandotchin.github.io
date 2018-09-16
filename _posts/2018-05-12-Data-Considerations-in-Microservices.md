@@ -23,4 +23,4 @@ Each service can store the same data but optimized for their own purpose (i.e. t
 - Use event driven architecture style: Services would publish events and interested service would subscribe to them in order to obtain information. This is much more favorable than polling to reduce communication. Nevertheless, this could still be a bottleneck so consider batching or aggregation of events.
 
 # References
-https://docs.microsoft.com/en-us/azure/architecture/microservices/data-considerations
+[Data Considerations](https://docs.microsoft.com/en-us/azure/architecture/microservices/data-considerations)
