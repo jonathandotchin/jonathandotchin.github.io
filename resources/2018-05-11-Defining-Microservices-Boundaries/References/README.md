@@ -1,0 +1,1 @@
+The document in this folder are for historical purposes. The blog posts are the master. These were drafts that I want to keep. Consider deleting them.
