@@ -34,3 +34,6 @@ In a microservices application, a single operation can span multiple services. C
 # Technology
 
 There are certain technological options that should be considered for system and container metrics and applications logs. For example, for system metrics, there are time-series database such as Prometheus (a pull-based system) and InfluxDB (a push-based system). Similarly, for dashboard, there are tools such as Kibana and Grafana. Similarly, for application logs, one popular approach is to use Fluentd and Elasticsearch where Fluentd collects logs generated from stdout or stderr and sends them to Elasticsearch which is optimized for search. Much like anything in microservices, we need to make sure it scale with the load of your system.
+
+# References
+[Logging and Monitoring](https://docs.microsoft.com/en-us/azure/architecture/microservices/logging-monitoring)

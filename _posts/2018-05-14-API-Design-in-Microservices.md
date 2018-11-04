@@ -50,3 +50,6 @@ An API is a contract between services. If the API changes, there is a risk of br
 •	Have a single service support multiple version
 •	Use side-by-side deployment (i.e. one deployment per version and route in consequence)
 However, there is a cost of maintaining multiple version so we should not create any if we don’t need them. Although semantic versioning (MAJOR.MINOR.PATCH) is an appropriate format to version services, client should only be affected by changes in MAJOR version.
+
+# References
+[API Design](https://docs.microsoft.com/en-us/azure/architecture/microservices/api-design)

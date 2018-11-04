@@ -46,3 +46,6 @@ To avoid losing requests, we must guarantee that all requests are processed at l
 ## Compensating Transactions
 
 Undoing steps might not be trivial. Sometimes it requires a manual process or an external system. A better approach would have a separate microservices handle the cancellation process. Picture it as a cancel request coming from the client. 
+
+# References
+[Ingestion and Workflow](https://docs.microsoft.com/en-us/azure/architecture/microservices/ingestion-workflow)

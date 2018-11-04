@@ -33,3 +33,6 @@ CI/CD is a key element of microservices application. Without it, we will not ach
     - Blue-green deployment is the process where we completely deployed the new version in a side by side manner with the old version. When all validations are done, we flip the switch to route all traffic to the new version. This takes more resources but you only run one version at a time.
     - Canary release is where you roll out the updates to only a handful of clients. As the validation continues and whether it is successful or not, the release is made more widespread until it reaches everyone. This is by far the most complicated way but has the benefit of testing your code with real life scenario.
     - Public test server is the process where we create a totally separate and independent environment where the public can run your application. Analogous view can be Windows Insider build or test server for games. This approach might not work for everything. For example, no one will be using your public test server to do online banking because the data are supposed to be segregated. However, running a test build of the latest iteration of an online game could be useful. 
+
+# References
+[Continuous Integration](https://docs.microsoft.com/en-us/azure/architecture/microservices/ci-cd)
