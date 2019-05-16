@@ -5,8 +5,6 @@ tags:
   - source control
 ---
 
-# Git Cheat Sheet
-
 ## Creating a Repository
 
 Create a repository locally
