@@ -12,6 +12,8 @@ Despite our best effort in design, it is possible that the implementation of the
 The following document aims to document the different contexts and axis of investigations with the solutions applied that were beneficial.
 
 # Workflow
+
+![Workflow]({{site.url}}/resources/2015-09-22-Optimization-Through-Profiling\images/Workflow.png "Workflow"){: .align-center}
  
 # Contexts and Axis of Investigation
 
