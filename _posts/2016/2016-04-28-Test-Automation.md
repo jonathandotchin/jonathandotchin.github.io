@@ -7,7 +7,7 @@ tags:
 
 # Definition
 
-![Pyramid]({{site.url}}/resources/2016-04-28-Test-Automation\images/Pyramid.png "Pyramid"){: .align-center}
+![Pyramid]({{site.url}}/resources/2016-04-28-Test-Automation\images/Pyramid.PNG "Pyramid"){: .align-center}
  
 ## Unit Tests
 
