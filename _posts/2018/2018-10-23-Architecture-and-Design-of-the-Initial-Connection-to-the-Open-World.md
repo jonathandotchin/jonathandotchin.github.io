@@ -33,7 +33,7 @@ For the sake of the prototype, we will limit the definition of compatible open w
 
 ## Joining Existent Servers
 
-![Existent]({{site.url}}/resources/2018-10-23-Architecture-and-Design-of-the-Initial-Connection-to-the-Open-World\images/Existent.png "Existent"){: .align-center}
+![Existent]({{site.url}}/resources/2018-10-23-Architecture-and-Design-of-the-Initial-Connection-to-the-Open-World/images/Existent.png "Existent"){: .align-center}
 
     1. The "Game Client" request from the "Open World Matchmaking Service" a "Game Server" to enter the "Open World" (PVE)
     2. The "Open World Matchmaking Service" finds a compatible "Game Server"
@@ -43,7 +43,7 @@ For the sake of the prototype, we will limit the definition of compatible open w
 
 ## Joining New Servers
 
-![New]({{site.url}}/resources/2018-10-23-Architecture-and-Design-of-the-Initial-Connection-to-the-Open-World\images/New.png "New"){: .align-center}
+![New]({{site.url}}/resources/2018-10-23-Architecture-and-Design-of-the-Initial-Connection-to-the-Open-World/images/New.png "New"){: .align-center}
 
     1. The "Game Client" request from the "Open World Matchmaking Service" a "Game Server" to enter the "Open World" (PVE)
     2. The "Open World Matchmaking Service" is unable to finds compatible "Game Server"
