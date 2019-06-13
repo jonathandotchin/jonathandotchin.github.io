@@ -52,6 +52,7 @@ This post documents the findings related to each monetization framework investig
 
 ### Conclusion
 - Not Approved yet
+- No Longer in Operation
 
 ## Yllix Media
 
