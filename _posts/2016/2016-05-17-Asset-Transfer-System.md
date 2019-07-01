@@ -6,13 +6,13 @@ tags:
   - asset
 ---
 
-# Use Case
+## Use Case
 
 - Independent asset transfer system where given a list of assets, a source asset store and a destination asset store, the necessary assets are transferred.
 
 > In each of the following design, we can also put the agent outside the asset store. This could be interesting if we want to treat the asset store as nothing but a storage much like signiant agents do with the NAS
 
-# Brainstorm Design I
+## Brainstorm Design I
 
 ### System-Level Architecture
 
@@ -54,7 +54,7 @@ tags:
   - We should provide a command line to do the heavy lifting
   - Otherwise, if interacting with the API directly, the client will need to code additional work such as uploading the asset list to the right place
 
-# Brainstorm Design II
+## Brainstorm Design II
 
 ### System-Level Architecture
 
@@ -98,7 +98,7 @@ tags:
   - We should provide a command line to do the heavy lifting
   - Otherwise, if interacting with the API directly, the client will need to code additional work such as uploading the asset list to the right place
 
-# Brainstorm Design III
+## Brainstorm Design III
 
 ### System-Level Architecture
 
