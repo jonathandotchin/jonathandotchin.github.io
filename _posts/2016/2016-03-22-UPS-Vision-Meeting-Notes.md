@@ -1,6 +1,7 @@
 ---
 tags:
   - vision
+  - team
 ---
 
 The final goal of this set of meetings is to establish a clear vision of our solutions in order to present a homogeneous image of our direction towards ourselves and our clients in terms of future development for the productions.
