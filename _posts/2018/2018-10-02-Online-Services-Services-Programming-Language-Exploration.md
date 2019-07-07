@@ -20,7 +20,7 @@ Ultimately, we want to decide on a default choice for the programming language, 
 
 ## General
 
-- **Online Services** - Represents the web services that are to be implemented by the Far Cry Online Team in order to support the dedicated server.
+- **Online Services** - Represents the web services that are to be implemented by the Online Team in order to support the dedicated server.
 - **Dedicated Servers** - Represents the servers running game logic (i.e. PVE, PVP).
 
 ## Level of Requirement
@@ -65,7 +65,7 @@ Represents the ability to run the code in both Windows and Linux.
 
 Represents the ability or ease to learn the language or new features in the language.
 
-**MUST HAVE** - We are developing online services, which is something new to the vast majority of Far Cry. We will most likely tap into new aspect of any language.
+**MUST HAVE** - We are developing online services, which is something new to the vast majority of our team. We will most likely tap into new aspect of any language.
 
 ## Current Knowledge
 
