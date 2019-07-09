@@ -45,9 +45,9 @@ tags:
    1. It checks if the loot is a valid premium currency loot
    2. It checks whether that particular loot has already been applied to the particular account
 
-5. If the request is valid, we apply the premium in Ubiservices
+5. If the request is valid, we apply the premium in the services
 
-6. Ubiservices sends an acknowledgement to the game server
+6. The services sends an acknowledgement to the game server
 
    1. If there is no acknowledgement, the game server should consider sending the message again
 

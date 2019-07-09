@@ -18,7 +18,7 @@ The following document provides a general analysis of the requirements for a mat
 
 ## Purpose
 
-TODO: Summary of what this document is about. We want to describe what is the matchmaking service, what it is doing in Talisker, what the use cases and/or problems we are trying to handle with it. We also want to identify any axis of investigation whether it is technological or algorithmic.
+TODO: Summary of what this document is about. We want to describe what is the matchmaking service, what it is doing in our game, what the use cases and/or problems we are trying to handle with it. We also want to identify any axis of investigation whether it is technological or algorithmic.
 
 TODO
 

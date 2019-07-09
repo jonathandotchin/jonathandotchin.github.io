@@ -85,7 +85,7 @@ Represents the availability of libraries that would aid us in our development. F
 
 **SITUATIONAL** - Depending on the feature we wish to support, we would need the additional packages to aid in development. Do we have official support, unofficial packages or build our own.
 
-## Ubisoft Inner Source / Sharing
+## Inner Source / Sharing
 
 Represents the ability to share our work with other productions
 

@@ -1,6 +1,6 @@
 ## Background
 
-The Windows Subsystem for Linux lets developers run Linux environments -- including most command-line tools, utilities, and applications -- directly on Windows, unmodified, without the overhead of a virtual machine. However, the official instructions to install the Windows Linux Subsystem will not work for most users since the Microsoft Store is blocked within Ubisoft. Therefore, we must fallback to the command prompt.
+The Windows Subsystem for Linux lets developers run Linux environments -- including most command-line tools, utilities, and applications -- directly on Windows, unmodified, without the overhead of a virtual machine. However, the official instructions to install the Windows Linux Subsystem will not work for most users since the Microsoft Store is blocked within the company. Therefore, we must fallback to the command prompt.
 
 ## Confirm your Windows Version
 
