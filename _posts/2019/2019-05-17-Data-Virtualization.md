@@ -21,7 +21,7 @@ Currently, the data is split among different data stores. The following observat
 - Each data store serves a different but often singular purpose
 - Users often utilize one silo but it is not uncommon to use more.
 
-![Before]({{site.url}}/resources/2019-05-17-Data-Virtualization/images/Before.PNG "Before"){: .align-center}
+![Before]({{site.url}}/resources/2019-05-17-Data-Virtualization/images/before.png "Before"){: .align-center}
 
 ### Issues and Problematics
 
@@ -44,7 +44,7 @@ In order to alleviate the lack of visibility our customers, we would need to pro
 
 Since each of these data stores are optimized for their own purposes, creating a singular store that would work well for each and every use cases would prove to be too difficult and time-consuming. Instead, we will aggregate the data from these different sources to develop a single and logical but virtual view that can be accessed by front-end solutions such as portals and dashboards. To do so, we will leverage an approach called "Data Virtualization". 
 
-![After]({{site.url}}/resources/2019-05-17-Data-Virtualization/images/After.PNG "After"){: .align-center}
+![After]({{site.url}}/resources/2019-05-17-Data-Virtualization/images/after.png "After"){: .align-center}
 
 - The data virtualization layer will avoid data replication as much as possible. Instead, it will utilize its own database to store
   - the additional data to complement the information available
