@@ -39,7 +39,7 @@ The above assumptions will need to be taken into account eventually but not in t
 
 ### System Diagram 
 
-![System]({{site.url}}/resources/2018-10-23-Architecture-and-Design-of-the-Initial-Connection-to-the-Open-World/images/System.png "System"){: .align-center}
+![System]({{site.url}}/resources/2018-10-30-Open-World-Matchmaking-Service-and-Dedicated-Game-Servers-Architecture-and-Design/images/System.png "System"){: .align-center}
 
 - There is a direct connection between the dedicated game server and the open world matchmaking service.
 - The dedicate game servers run the game, keep track of player information and send it to the open world matchmaking service.
@@ -52,7 +52,7 @@ The above assumptions will need to be taken into account eventually but not in t
 
 #### General Flow
 
-![General]({{site.url}}/resources/2018-10-23-Architecture-and-Design-of-the-Initial-Connection-to-the-Open-World/images/general.png "General"){: .align-center}
+![General]({{site.url}}/resources/2018-10-30-Open-World-Matchmaking-Service-and-Dedicated-Game-Servers-Architecture-and-Design/images/general.png "General"){: .align-center}
 
 1. Tracking Dedicated Servers
    1. The dedicated game servers detect that the need to contact the open world matchmaking service.
@@ -74,7 +74,7 @@ At the end of the workflow mentioned above, the dedicated game servers perform t
 
 #### Track Dedicated Servers
 
-![Dedicated]({{site.url}}/resources/2018-10-23-Architecture-and-Design-of-the-Initial-Connection-to-the-Open-World/images/dedicated.png "Dedicated"){: .align-center}
+![Dedicated]({{site.url}}/resources/2018-10-30-Open-World-Matchmaking-Service-and-Dedicated-Game-Servers-Architecture-and-Design/images/dedicated.png "Dedicated"){: .align-center}
 
 1. The dedicated game servers detect that the need to contact the open world matchmaking service.
    1. This can happen by default and can be always on for an open world server.
@@ -84,7 +84,7 @@ At the end of the workflow mentioned above, the dedicated game servers perform t
 
 #### Track Players
 
-![Track]({{site.url}}/resources/2018-10-23-Architecture-and-Design-of-the-Initial-Connection-to-the-Open-World/images/track.png "Track"){: .align-center}
+![Track]({{site.url}}/resources/2018-10-30-Open-World-Matchmaking-Service-and-Dedicated-Game-Servers-Architecture-and-Design/images/track.png "Track"){: .align-center}
 
 Having being registered with the open world matchmaking service, the dedicated game server proceed with players information.
 
@@ -170,7 +170,7 @@ We will leverage gRPC immediately for communication between the dedicated game s
 
 ### Diagram
 
-![Sequence]({{site.url}}/resources/2018-10-23-Architecture-and-Design-of-the-Initial-Connection-to-the-Open-World/images/sequence.png "Sequence"){: .align-center}
+![Sequence]({{site.url}}/resources/2018-10-30-Open-World-Matchmaking-Service-and-Dedicated-Game-Servers-Architecture-and-Design/images/sequence.png "Sequence"){: .align-center}
 
 ### Legend
 
