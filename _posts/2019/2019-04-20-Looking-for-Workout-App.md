@@ -143,3 +143,4 @@ The following apps have been selected for trial.
 
 - Jefit
 - WORKIT - Gym Log, Workout Tracker, Fitness Trainer
+- For a 5x5 workout, the choice is Strong
