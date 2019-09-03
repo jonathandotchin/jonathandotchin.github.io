@@ -1,0 +1,90 @@
+   body
+   {
+   margin: 0;
+   padding: 0;
+   color: #333;
+   font: 13px Trebuchet MS, Lucida Sans Unicode, Arial, sans-serif;
+   background: rgb(238, 238, 238);
+   text-align: center;
+   }
+abbr
+   {
+   border: none;
+   }
+
+.page-wrapper
+   {
+   margin: 0 auto;
+   width: 724px;
+   position: relative;
+   background: #fff;
+   padding: 0 10px 0 10px;
+   text-align: left;
+   }
+* html .page-wrapper
+   {
+   width: 744px;
+   width: 724px;
+   }
+
+header
+   {
+   position: absolute;
+   top: 25px;
+   left: 40px;
+   }
+h1
+   {
+   width: 156px;
+   height: 25px;
+   overflow: hidden;
+   margin: 0;
+   color: #333;
+   text-indent: 100%;
+   white-space: nowrap;
+   overflow: hidden;
+   }
+h2
+   {
+   font-size: 12px;
+   margin: 0;
+   }
+
+.summary
+   {
+   padding-top: 85px;
+   }
+.summary p:last-child
+   {
+   font-size: 12px;
+   position: absolute;
+   top: 65px;
+   right: 20px;
+   margin: 0;
+   }
+.page-wrapper .intro .summary p:first-child
+   {
+   font-size: 11px;
+   margin: 0;
+   width: 164px;
+   height: 141px;
+   padding: 30px 530px 0 30px;
+   color: #333;
+   font: 12px/150% Trebuchet MS;
+   }
+
+.preamble, .supporting
+   {
+   margin: 0 20px 0 243px;
+   }
+.supporting p, .preamble p
+   {
+   line-height: 150%;
+   margin: 10px 0 10px 0;
+   }
+.preamble h3, .explanation h3, .participation h3, .benefits h3, .requirements h3
+   {
+   width: 200px;
+   height: 24px;
+   margin: 40px 0 10px 0;
+   }
