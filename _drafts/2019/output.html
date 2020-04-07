@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Software Development Standards and Best Practices</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p>The software development standards and best practices not only define the working methods but also the tools that facilitate the life of developers. This document intends to harmonize the ecosystem of software development in our workplace and will be updated when necessary.</p>
+<h1 id="the-3-1-pillars">The “3 + 1” pillars</h1>
+<p>To ensure the success of the software development standards and best practices, the following criteria must be kept in mind when they are established.</p>
+<h2 id="adhesion">Adhesion</h2>
+<p>Everyone must adhere and be comfortable with the defined standards.</p>
+<h2 id="adaptation">Adaptation</h2>
+<p>Nothing is perfect; need to adapt the standards required.</p>
+<h2 id="automation">Automation</h2>
+<p>If possible, application of standards automation will allow developers to work on more important things.</p>
+<h2 id="respect">Respect</h2>
+<p>Respect the standards already in placed</p>
+<h1 id="development-framework">Development Framework</h1>
+<h2 id="summary">Summary</h2>
+<table>
+<colgroup>
+<col style="width: 2%" />
+<col style="width: 2%" />
+<col style="width: 44%" />
+<col style="width: 9%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Name</th>
+<th style="text-align: center;">Feature</th>
+<th style="text-align: center;">Valid Choices</th>
+<th style="text-align: center;">To Avoid</th>
+<th style="text-align: center;">Reasons</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">.NET Framework</td>
+<td style="text-align: center;">Client Side</td>
+<td style="text-align: center;">- 3.5.1 (Preferred) - 4.0.0 (Still Valid)</td>
+<td style="text-align: center;">- Anything above 4.0.0</td>
+<td style="text-align: center;">- .NET Framework 3.5.1 is the only framework that is guarantee to be installed on all Windows 7 machines - .NET Framework 4.0.0 should be installed on most machines but this is not guarantee - .NET Framework 4.6 will be an OS component in Windows 10, therefore, it will be installed by default. - Exceptions can be made if you absolutely need a higher version</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"></td>
+<td style="text-align: center;">Server Side</td>
+<td style="text-align: center;">- 3.5.1 or above</td>
+<td style="text-align: center;">- Care when not already installed on server</td>
+<td style="text-align: center;">- Server side application where the server is under our control, feel free to use whichever .NET framework. - However, make sure that it is already installed otherwise validate a smooth installation</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">VC++ Redistributable</td>
+<td style="text-align: center;">Client and Server Side</td>
+<td style="text-align: center;">- Microsoft Visual C++ redistributable 2008 SP1 9.0.30729 EN (x64) - Microsoft Visual C++ Redistributable 2008 SP1 9.0.30729 EN (x86) - Microsoft Visual C++ redistributable 2010 10.0.30319 EN (x64) - Microsoft Visual C++ redistributable 2010 10.0.30319 EN (x86) - Microsoft Visual C++ redistributable 2012 11.0.66610 EN (x64) - Microsoft Visual C++ redistributable 2012 11.0.66610 EN (x86)</td>
+<td style="text-align: center;">- Anything above or below the valid choices since they are not installed by default.</td>
+<td style="text-align: center;">- On the server side, we could install it ourselves but it is best not too since it has not being tested. - The 2012 version should be the defacto version since it comes with Visual Studio 2012.</td>
+</tr>
+</tbody>
+</table>
+<h1 id="developer-tools">Developer Tools</h1>
+<h2 id="summary-1">Summary</h2>
+<table>
+<colgroup>
+<col style="width: 3%" />
+<col style="width: 4%" />
+<col style="width: 12%" />
+<col style="width: 6%" />
+<col style="width: 73%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Feature</th>
+<th>Valid Choices</th>
+<th>To Avoid</th>
+<th>Reasons</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Development</td>
+<td>C++/C#</td>
+<td>- Visual Studio 2012 Professional - Visual Studio 2010 Professional - Visual Studio 2015</td>
+<td>- Visual Studio 2010 Premium</td>
+<td>- Visual Studio 2012 should be favored since development on Xbox One requires it. - Any new development should be performed with it or be updated to it - Existent project can continue to use Visual Studio 2010 - Visual Studio 2010 Premium, which is installed on half of the team and has a range of impressive tools for development, debugging and testing, could, by itself, establish the standards of many aspect of software development. However, since it is no longer available, we need to find other tools to meet our needs.</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>MSSQL</td>
+<td>- SQL Management Studio 2008 R2</td>
+<td>- SQL Management Studio 2012</td>
+<td>- Our latest attempt to install SQL Management Studio 2012 result in a bug that prevented use to run the application</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>MSSQL - Intellisense</td>
+<td>- SQL Prompt - SQL Complete</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>MySQL</td>
+<td>- SQLyog</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Productivity - C#</td>
+<td>- Resharper Latest</td>
+<td>- Visual Assist - Resharper 5 &amp; 6</td>
+<td>- There are significant improvements and behaviors discrepencies between Resharper 7 and previous version of Resharper. For instance, the coding standard is much more up to date in version 7, therefore, it is recommended to use it. Currently, the studio has a site license accessible via HTTP so there is no reason not to use it. - Please follow the following procedure to install ReSharper: Setup ReSharper</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Productivity - C++</td>
+<td>- Visual Assist</td>
+<td></td>
+<td>Visual Assist and Resharper are often installed on the workstation of developers at the same time. The reason is very simple; ReSharper is compatible only for c# and Visual Assist also works for C++. However, when they are installed together, there are several cases of incompatibility. For this reason, it is preferable to disabler Visual Assist because our environment is mainly c#.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Tests</td>
+<td>- Resharper Latest</td>
+<td>- TestDriven.Net</td>
+<td>- TestDriven.Net is no longer recommended - The latest resharper is far better</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Tests Coverage</td>
+<td>- dotCover</td>
+<td>- TestDriven.Net - OpenCover &amp; Report Generator</td>
+<td>- dotCover does the job better than TestDriven and NCover</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Documentation</td>
+<td>- GhostDoc</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Integration</td>
+<td>- Araxis Merge</td>
+<td>- P4Merge &amp; P4Diff</td>
+<td>- P4Merge and P4Diff are integration tools that come by default of Perforce. They are simply less powerful than Araxis Merge.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Source control</td>
+<td>- Perforce Plugin (P4VS)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Source Control Assistant</td>
+<td>- Submit Assistant</td>
+<td></td>
+<td>- Internal tool</td>
+</tr>
+<tr class="odd">
+<td>Source code analysis</td>
+<td>Style</td>
+<td>- StyleCop (and plugin for Resharper &lt; 6)</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Conceptual</td>
+<td>- FxCop</td>
+<td>- Source Analysis</td>
+<td>- Source Analysis is a feature that comes with Visual Studio 2010 Premium or better. Therefore, it is to be avoided since this version of Visual Studio is not standard in our company.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Defects and Security</td>
+<td>- Coverity</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Debugging</td>
+<td>Memory</td>
+<td>- ANTS Memory Profiler</td>
+<td>- dotTrace Memory</td>
+<td>- dotTrace is, at this time, unable to attach to a running .net program like ANTS Memory and Performance Profiler.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Performance</td>
+<td>- ANTS Performance Profiler</td>
+<td>- dotTrace Performance</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Database</td>
+<td>Synchronization - Structure</td>
+<td>- SQL Compare</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Synchronization - Data</td>
+<td>- SQL Data Compare</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Components Managements</td>
+<td>.NET Libraries</td>
+<td>- NuGet</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Web Software</td>
+<td>- Microsoft Web Platform Installer</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1 id="components-and-libraries">Components and libraries</h1>
+<h2 id="summary-2">Summary</h2>
+<ul>
+<li>It is recommended to use libraries and components that are directly available via NuGet for ease and automation of installation and configuration.</li>
+<li>If the libraries and components are not available in NuGet, they should be included directly in the project and be submitted in Perforce under the <strong>ExtLibs</strong> folder.</li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 1%" />
+<col style="width: 2%" />
+<col style="width: 19%" />
+<col style="width: 18%" />
+<col style="width: 56%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Feature</th>
+<th>Valid Choices</th>
+<th>To Avoid</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Web UI</td>
+<td>Silverlight</td>
+<td>- Telerik Controls for Silverlight</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>ASP.NET</td>
+<td>- ComponentArt Web.UI - ComponentArt SOA.UI - AJAX Control Toolkit</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>ASP.NET MVC</td>
+<td>- Telerik Extensions for ASP.NET MVC - Knockout.js</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>HTML &amp; CSS</td>
+<td>- Metro UI CSS - http://metroui.org.ua/ - Bootstrap - http://twitter.github.io/bootstrap/ - http://talkslab.github.io/metro-bootstrap/index.html</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Web Service</td>
+<td>Business Logic over Network</td>
+<td>- WCF - ASP.NET Web API</td>
+<td>- .NET Remoting</td>
+<td>- Favor WCF when the entire ecosystem is Microsoft - Favor ASP.NET when the web service is “public” facing and the ecosystem is not always Microsoft</td>
+</tr>
+<tr class="even">
+<td>Windows UI</td>
+<td>Windows Forms</td>
+<td>- Xceed Windows Forms Components</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>WPF</td>
+<td>- mahapps.metro - http://mahapps.com/ - https://www.nuget.org/packages/MahApps.Metro/</td>
+<td>- Elysium http://elysium.asvishnyakov.com/ - http://nuget.org/packages/Elysium.Theme/ - Modern UIhttps://github.com/firstfloorsoftware/mui - http://nuget.org/packages/ModernUI.WPF/</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Windows Stores</td>
+<td>- Callisto - http://timheuer.github.io/callisto/ - http://nuget.org/packages/Callisto/</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Processing</td>
+<td>ZIP</td>
+<td>- Xceed ZIP</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>FTP</td>
+<td>- Xceed FTP</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Excel</td>
+<td>- Aspose.Cells</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Database Access</td>
+<td>MSSQL</td>
+<td>- Entity Framework</td>
+<td>- LINQ to SQL</td>
+<td>- LINQ to SQL is simply a subset of Entity Framework (LINQ to Entities). LINQ to SQL supports only 1 to 1 table mappings, views, the sprocs and functions in Microsoft SQL Server. This technology is most suitable for “rapid development”.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>MySQL</td>
+<td>- Connector/Net v6.5.4</td>
+<td>- dotConnect</td>
+<td>- Memory leaks among other things.</td>
+</tr>
+<tr class="even">
+<td>Test</td>
+<td>Unit Test</td>
+<td>- NUnit</td>
+<td>- MSTest - xUnit.net</td>
+<td>- Although MSTest is the test library created and supported by Microsoft, it is also primitive and maintained in a long cycle. It is therefore inferior than the library that are actively maintained by the community. Furthermore, setting up MSTest to run on a build machine as part of a CI system is a pain. You basically need to install Visual Studio to get it working. - xUnit.net is a new test library that is very simple and very fast. However, it lacks traction in the world of continous integration. Some tool such as AnthillPro used by us does not support by default.</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>UI Test</td>
+<td>- White - https://github.com/TestStack/White - http://teststack.azurewebsites.net/white/index.html</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Mocking</td>
+<td>- Moq</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Console</td>
+<td>Command Line Parser</td>
+<td>- Command Line Parser Library - http://nuget.org/packages/CommandLineParser/</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Design Framework</td>
+<td>MVVM</td>
+<td>- MVVM Light - http://www.galasoft.ch/mvvm/ - http://nuget.org/packages/MvvmLightLibs/ - Caliburn.Micro - http://caliburnmicro.codeplex.com/ - http://nuget.org/packages/Caliburn.Micro/</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>Dependency Injection</td>
+<td>- Ninject - Unity</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Debugging</td>
+<td>Logging</td>
+<td>- Enterprise Library Logging - NLog</td>
+<td>- Log4Net</td>
+<td>- Log4Net does stack overflow exception…very bad</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
