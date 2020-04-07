@@ -1,1 +1,1 @@
-pandoc 2013-01-15-Software-Development-Standards-and-Best-Practices.md -f markdown -t html -s -o output.html
+pandoc 2013-04-17-Branching-Strategies.md -f markdown -t html -s -o output.html
