@@ -59,4 +59,4 @@ Custom exception handler
 Translate application/domain exception into http error code
 https://github.com/jonathandotchin/NorthwindTraders/blob/master/Src/WebUI/Common/CustomExceptionHandlerMiddleware.cs
 https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-3.1
-The order in the startup.cs matters
+The order in the startup.cs matters.
